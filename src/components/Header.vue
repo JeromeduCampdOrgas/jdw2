@@ -1,30 +1,60 @@
 <template>
-  <div id="header">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
       <div class="logo">
         <img id="logo" src="../assets/logo/Logo1_retouche.png" alt="" />
       </div>
-      <div id="menu" class="menu">
-        <button id="menu-mobile" class="menu-mobile" @mouseover="menuMobile()">
-          <i class="fa fa-bars"></i>
+      <div id="menu">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <ul id="bloc-menu">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/realisations">Réalisations</a></li>
-          <li><a href="/tarifs">Tarifs</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Réalisations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "Header",
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+#logo {
+  height: 30px;
+  margin: auto;
+}
 </style>
