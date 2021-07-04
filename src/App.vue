@@ -1,6 +1,7 @@
 <template>
   <div id="container">
     <Header />
+
     <Footer />
   </div>
 </template>
@@ -8,8 +9,14 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 export default {
   name: "App",
+  data() {
+    return {
+      renderComponent: true,
+    };
+  },
   components: {
     Header,
     Footer,
@@ -23,7 +30,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  background: grey;
+  color: #4c74b4;
 }
 </style>

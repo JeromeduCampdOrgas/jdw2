@@ -2,7 +2,7 @@
   <!-- Footer -->
   <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
@@ -54,48 +54,21 @@
         ></a>
       </section>
       <!-- Section: Social media -->
-
-      <!-- Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Contact
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
-
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Links -->
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      <a class="text-white" href="#">fff</a>
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
   </footer>
-  <!-- Footer -->
 </template>
 
 <script>
 export default {};
 </script>
 
-<style>
+<style lang="scss">
 </style>
