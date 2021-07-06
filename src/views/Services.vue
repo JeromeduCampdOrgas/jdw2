@@ -1,10 +1,137 @@
 <template>
-  <h1>je suis la page services</h1>
+  <div class="contenu d-flex" id="contenu">
+    <div
+      class="card"
+      v-for="service in services"
+      v-bind:key="service"
+      style="transition: animCard 2s"
+    >
+      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img v-bind:src="service.icone" class="img-fluid" />
+        <a href="#!">
+          <div
+            class="mask"
+            style="background-color: rgba(251, 251, 251, 0.15)"
+          ></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ service.prestation }}</h5>
+        <p class="card-text">
+          {{ service.techno }}
+        </p>
+        <p class="card-text">
+          {{ service.complementText }}
+        </p>
+        <a href="#!" class="btn btn-primary" @click="test">Button</a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      services: [
+        {
+          prestation: "Site personnalisé monopage",
+          icone: require("../assets/realisations/reserviamobile2.png"),
+          techno: "HTML5, CSS3",
+          complementText:
+            "Un site à votre image ne nécessitant pas de mises à jour fréquentes, pas de menu de navigation ou de base de données",
+        },
+        {
+          prestation: "Site personnalisé multipages",
+          icone: require("../assets/realisations/Ohmyfoodmobile2.png"),
+          techno: "html5, css3,Sass",
+          complementText:
+            "Un site à votre image ne nécessitant pas de mises à jour fréquentes, avec un menu de navigation, sans base de données",
+        },
+        {
+          prestation: "Site e-commerce",
+          icone: require("../assets/realisations/orinocomobile2.png"),
+          techno: "html5, css3, Sass, MongoDb",
+          complementText:
+            "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+        },
+        {
+          prestation: "Application Web",
+          icone: require("../assets/realisations/groupomaniamobile.png"),
+          techno: "html5, css3, Sass, MySql",
+          complementText:
+            "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+        },
+        {
+          prestation: "Optimisation / Référencement",
+          icone: require("../assets/realisations/seo.png"),
+          techno: "html5, css3, Sass, MySql",
+          complementText:
+            "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+        },
+      ],
+    };
+  },
+  methods: {
+    test: function () {
+      var parent = document.getElementById("contenu");
+      for (var i = 0, len = parent.children.length; i < len; i++) {
+        (function (index) {
+          parent.children[i].onclick = function () {
+            alert(index);
+          };
+        })(i);
+      }
+    },
+  },
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+.contenu {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  & .card {
+    height: 550px;
+    width: 100%;
+    margin: 60px auto;
+    border: none;
+    /*animation: animCard 2s;*/
+    & .bg-image {
+      border-radius: 25px;
+      border: none;
+      & .img-fluid {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+@keyframes animCard {
+  0% {
+    transform: rotateY(-90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/**Media queries */
+
+@media (min-width: 667px) {
+  .d-flex {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & .card {
+      margin: 60px 30px;
+      width: 26%;
+    }
+  }
+}
 </style>
