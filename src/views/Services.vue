@@ -24,7 +24,9 @@
         <p class="card-text">
           {{ service.complementText }}
         </p>
-        <a href="#!" class="btn btn-primary" @click="detailService">Button</a>
+        <a href="#!" class="btn btn-primary" @click="detailService"
+          >En savoir plus</a
+        >
       </div>
     </div>
   </div>
