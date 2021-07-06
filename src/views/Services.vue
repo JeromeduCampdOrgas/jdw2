@@ -1,4 +1,5 @@
 <template>
+  <h1>Propositions de services</h1>
   <div class="contenu d-flex" id="contenu">
     <div
       class="card"
@@ -23,7 +24,7 @@
         <p class="card-text">
           {{ service.complementText }}
         </p>
-        <a href="#!" class="btn btn-primary" @click="test">Button</a>
+        <a href="#!" class="btn btn-primary" @click="detailService">Button</a>
       </div>
     </div>
   </div>
@@ -40,6 +41,7 @@ export default {
           techno: "HTML5, CSS3",
           complementText:
             "Un site à votre image ne nécessitant pas de mises à jour fréquentes, pas de menu de navigation ou de base de données",
+          page: "/monopage",
         },
         {
           prestation: "Site personnalisé multipages",
@@ -47,6 +49,7 @@ export default {
           techno: "html5, css3,Sass",
           complementText:
             "Un site à votre image ne nécessitant pas de mises à jour fréquentes, avec un menu de navigation, sans base de données",
+          page: "/multipage",
         },
         {
           prestation: "Site e-commerce",
@@ -54,6 +57,7 @@ export default {
           techno: "html5, css3, Sass, MongoDb",
           complementText:
             "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+          page: "/ecommerce",
         },
         {
           prestation: "Application Web",
@@ -61,6 +65,7 @@ export default {
           techno: "html5, css3, Sass, MySql",
           complementText:
             "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+          page: "/api",
         },
         {
           prestation: "Optimisation / Référencement",
@@ -68,17 +73,21 @@ export default {
           techno: "html5, css3, Sass, MySql",
           complementText:
             "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+          page: "/seo",
         },
       ],
     };
   },
   methods: {
-    test: function () {
+    detailService: function () {
       var parent = document.getElementById("contenu");
+      let serviceArray = this.services;
       for (var i = 0, len = parent.children.length; i < len; i++) {
         (function (index) {
           parent.children[i].onclick = function () {
-            alert(index);
+            console.log("index: " + index);
+            console.log(serviceArray[index].prestation);
+            location.replace(serviceArray[index].page);
           };
         })(i);
       }
@@ -98,7 +107,7 @@ export default {
     width: 100%;
     margin: 60px auto;
     border: none;
-    /*animation: animCard 2s;*/
+    animation: animCard 2s;
     & .bg-image {
       border-radius: 25px;
       border: none;

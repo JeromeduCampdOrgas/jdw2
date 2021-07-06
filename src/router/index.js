@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Services from '@/views/Services.vue';
+import Monopage from '@/views/Monopage.vue';
 /*import Realisations from '@/views/Realisations.vue';
 import Tarifs from '@/views/Tarifs.vue';
 import Contact from '@/views/Contact.vue';
@@ -27,6 +28,14 @@ const routes = [
         component: Services,
         meta: {
             title: 'Services'
+        }
+    },
+    {
+        name: 'Monopage',
+        path: '/monopage',
+        component: Monopage,
+        meta: {
+            title: 'Monopage'
         }
     }/*,
     {
