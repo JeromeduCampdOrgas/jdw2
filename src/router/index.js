@@ -3,6 +3,8 @@ import Home from '@/views/Home.vue';
 import Services from '@/views/Services.vue';
 import Monopage from '@/views/Monopage.vue';
 import Multipage from '@/views/Multipage.vue';
+import Ecommerce from '@/views/Ecommerce.vue';
+
 /*import Realisations from '@/views/Realisations.vue';
 import Tarifs from '@/views/Tarifs.vue';
 import Contact from '@/views/Contact.vue';
@@ -45,6 +47,14 @@ const routes = [
         component: Multipage,
         meta: {
             title: 'Multipage'
+        }
+    },
+    {
+        name: 'Ecommerce',
+        path: '/ecommerce',
+        component: Ecommerce,
+        meta: {
+            title: 'Ecommerce'
         }
     }
     /*,
