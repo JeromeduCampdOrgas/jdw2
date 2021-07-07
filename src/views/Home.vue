@@ -8,7 +8,9 @@
       >
         <h1>Jérôme du Camp d'Orgas</h1>
         <p>Développeur Web Freelance / Full Stack</p>
+        <p id = "carre"></p>
       </div>
+      
       <div id="accueilImg" class="accueilImg">
         <img
           id="accueil-image"
@@ -111,6 +113,13 @@ export default {
 @media (min-width: 900px) {
   .d-flex {
     flex-direction: row;
+  }
+  #carre {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: purple;
+    margin: auto;
   }
 }
 /**keyframes */

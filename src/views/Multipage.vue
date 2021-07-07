@@ -1,12 +1,12 @@
 <template>
-  <Monopage />
+  <Multipage />
 </template>
 
 <script>
-import Monopage from "@/components/Monopage";
+import Multipage from "@/components/Multipage";
 export default {
   components: {
-    Monopage,
+    Multipage,
   },
 };
 </script>

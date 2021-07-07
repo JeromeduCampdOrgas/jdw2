@@ -88,7 +88,7 @@ export default {
         (function (index) {
           parent.children[i].onclick = function () {
             console.log("index: " + index);
-            console.log(serviceArray[index].prestation);
+            console.log(serviceArray[index].page);
             location.replace(serviceArray[index].page);
           };
         })(i);
