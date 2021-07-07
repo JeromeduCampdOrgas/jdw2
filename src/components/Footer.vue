@@ -5,42 +5,10 @@
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-
-        <!-- Twitter -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-
-        <!-- Google -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-
-        <!-- Instagram -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-
         <!-- Linkedin -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://www.linkedin.com/in/jerome-du-camp-d-orgas-63830689"
           role="button"
           ><i class="fab fa-linkedin-in"></i
         ></a>
@@ -56,11 +24,35 @@
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
+    <div class="footer" id="footerContact">
+      <button
+        id="btn"
+        class="btn"
+        v-on:mouseover="buttonHover()"
+        v-on:mouseleave="buttonLeave()"
+        @click="btnClick()"
+      >
+        Contactez-moi
+      </button>
+    </div>
+    <div class="mentions">
+      <ul>
+        <li>
+          <a href="">Mentions légales</a>
+        </li>
+        <li>
+          <a href="">CGV / CGU</a>
+        </li>
+        <li>
+          <a href="">Politique de confidentialité</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2021 Copyright:
+      <a class="text-white" href="#">JdW</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -70,5 +62,20 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.mentions {
+  margin-top: 30px;
+  & ul {
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 667px) {
+  .mentions {
+    & ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
 </style>
