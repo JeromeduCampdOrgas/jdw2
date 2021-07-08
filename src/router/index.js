@@ -5,15 +5,18 @@ import Monopage from '@/views/Monopage.vue';
 import Multipage from '@/views/Multipage.vue';
 import Ecommerce from '@/views/Ecommerce.vue';
 import Application from '@/views/Application.vue';
+import Mentions from '@/views/Mentions.vue';
+import Cgv from '@/views/Cgv.vue';
+import Contact from '@/views/Contact.vue';
 /*import Realisations from '@/views/Realisations.vue';
 import Tarifs from '@/views/Tarifs.vue';
-import Contact from '@/views/Contact.vue';
+
 import SiteInternet from '@/views/SiteInternet.vue';
 import SitePerso from '@/views/SitePerso.vue';
 import SiteCommerce from '@/views/SiteCommerce.vue';
 import SiteSpecifique from '@/views/SiteSpecifique.vue';
-import MentionsLegales from '@/views/MentionsLegales.vue';
-import Cgv from '@/views/Cgv.vue';
+
+
 import NotFound from '@/views/NotFound.vue';*/
 
 const routes = [
@@ -64,6 +67,30 @@ const routes = [
         meta: {
             title: 'Application'
         }
+    },
+    {
+        name: 'Mentions',
+        path: '/mentions',
+        component: Mentions,
+        meta: {
+            title: 'mentions'
+        }
+    },
+    {
+        name: 'Cgv',
+        path: '/cgv',
+        component: Cgv,
+        meta: {
+            title: 'cgv'
+        }
+    },
+    {
+        name: 'Contact',
+        path: '/contact',
+        component: Contact,
+        meta: {
+            title: 'Contact'
+        }
     }
     /*,
     {
@@ -80,14 +107,6 @@ const routes = [
         component: Tarifs,
         meta: {
             title: 'Tarifs'
-        }
-    },
-    {
-        name: 'Contact',
-        path: '/contact',
-        component: Contact,
-        meta: {
-            title: 'Contact'
         }
     },
     {
@@ -120,22 +139,6 @@ const routes = [
         component: SiteSpecifique,
         meta: {
             title: 'Api'
-        }
-    },
-    {
-        name: 'Mentions',
-        path: '/mentions',
-        component: MentionsLegales,
-        meta: {
-            title: 'mentions'
-        }
-    },
-    {
-        name: 'Cgv',
-        path: '/cgv',
-        component: Cgv,
-        meta: {
-            title: 'cgv'
         }
     },
     {

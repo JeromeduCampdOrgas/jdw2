@@ -25,15 +25,13 @@
     </div>
     <!-- Grid container -->
     <div class="footer" id="footerContact">
-      <button
+      <input
+        type="button"
         id="btn"
         class="btn"
-        v-on:mouseover="buttonHover()"
-        v-on:mouseleave="buttonLeave()"
-        @click="btnClick()"
-      >
-        Contactez-moi
-      </button>
+        value="Contactez-moi"
+        @click="btnClick"
+      />
     </div>
     <div class="mentions">
       <ul>
@@ -57,7 +55,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    btnClick: function () {
+      location.replace("/contact");
+    },
+    /*buttonHover: function () {
+      let el = document.getElementById("btn");
+      el.style.background = "linear-gradient(to right,#bbb,#fff)";
+    },
+    buttonLeave: function () {
+      let el = document.getElementById("btn");
+      el.style.background = "#fff";
+    },*/
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -69,6 +81,9 @@ export default {};
       color: #fff;
     }
   }
+}
+#btn:hover {
+  background: linear-gradient(to right, #bbb, rgb(124, 122, 122));
 }
 
 @media (min-width: 667px) {

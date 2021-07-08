@@ -24,10 +24,10 @@
     </div>
     <div class="" id="maPresentation" v-if="visible" @click="affichePres()">
       <p>
-        Après 22 ans dans le suivi de production, de modélisation, de
-        dimensionnement d'activités diverses, de planification de création
-        d'outils de suivi, de pilotage d'activité et d'analyse, j'ai décidé de
-        mettre à votre disposition mon expérience et mes compétences à votre
+        Après 22 ans dans le suivi de production, la modélisation, le
+        dimensionnement d'activités diverses, la planification, la création
+        d'outils de suivi, le pilotage d'activité et l'analyse de résultats, j'ai décidé de
+        mettre mon expérience et mes compétences à votre
         service.
       </p>
       <p>
@@ -35,10 +35,11 @@
         trouver les solutions...en proposer.
       </p>
       <p>
-        Dans mon ADN, toute demande s'étudie, s'analyse afin de fournir ce qui
+        Dans mon ADN, toute demande s'étudie et s'analyse afin de fournir ce qui
         correspond à l'attente et toute production doit respecter le délai
-        défini.
+        défini.  
       </p>
+      <p>De toute façon, "on en parle".</p>
       <p id = "proposition">Ce que je vous propose aujourd'hui: <br><br>
           <ul>
             <li>Comprendre votre activité</li>

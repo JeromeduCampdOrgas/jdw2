@@ -26,7 +26,8 @@
           ><!--/realisations-->
           <router-link to=""><i class="fas fa-barcode"></i>Tarifs</router-link
           ><!--/tarifs-->
-          <router-link to=""><i class="fas fa-id-card"></i>Contact</router-link
+          <router-link to="/contact"
+            ><i class="fas fa-id-card"></i>Contact</router-link
           ><!--/contact-->
         </div>
       </div>
