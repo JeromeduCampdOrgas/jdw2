@@ -279,4 +279,29 @@ input::placeholder {
   border-radius: 5px;
   cursor: pointer;
 }
+/********** */
+@media (min-width: 667px) {
+  .main-block {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  form {
+    width: 45%;
+  }
+  input,
+  textarea,
+  select {
+    width: calc(100% - 200px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+  }
+  #offre {
+    width: 40%;
+  }
+  .button {
+    width: 40%;
+  }
+}
 </style>
