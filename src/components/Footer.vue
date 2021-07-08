@@ -37,11 +37,9 @@
     </div>
     <div class="mentions">
       <ul>
+        <router-link to="/mentions">Mentions légales</router-link>
         <li>
-          <a href="">Mentions légales</a>
-        </li>
-        <li>
-          <a href="">CGV / CGU</a>
+          <router-link to="/cgv">CGV / CGU</router-link>
         </li>
         <li>
           <a href="">Politique de confidentialité</a>
@@ -67,6 +65,9 @@ export default {};
   margin-top: 30px;
   & ul {
     list-style-type: none;
+    & a {
+      color: #fff;
+    }
   }
 }
 
