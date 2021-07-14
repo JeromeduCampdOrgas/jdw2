@@ -4,6 +4,7 @@ import Services from '@/views/Services.vue';
 import Monopage from '@/views/Monopage.vue';
 import Multipage from '@/views/Multipage.vue';
 import Ecommerce from '@/views/Ecommerce.vue';
+import Tarifs from '@/views/Tarifs.vue';
 import Application from '@/views/Application.vue';
 import Mentions from '@/views/Mentions.vue';
 import Cgv from '@/views/Cgv.vue';
@@ -66,6 +67,14 @@ const routes = [
         component: Application,
         meta: {
             title: 'Application'
+        }
+    },
+    {
+        name: 'Tarifs',
+        path: '/tarifs',
+        component: Tarifs,
+        meta: {
+            title: 'Tarifs'
         }
     },
     {

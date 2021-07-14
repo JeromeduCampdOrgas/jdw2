@@ -21,11 +21,15 @@
           <router-link to="/services"
             ><i class="fas fa-tasks"></i>Services</router-link
           ><!---->
+
+          ><!--/realisations-->
           <router-link to=""
             ><i class="fab fa-buffer"></i>Réalisations</router-link
-          ><!--/realisations-->
-          <router-link to=""><i class="fas fa-barcode"></i>Tarifs</router-link
           ><!--/tarifs-->
+          <router-link to="/tarifs"
+            ><i class="fas fa-barcode"></i>Tarifs</router-link
+          >
+          <!--/contact-->
           <router-link to="/contact"
             ><i class="fas fa-id-card"></i>Contact</router-link
           ><!--/contact-->

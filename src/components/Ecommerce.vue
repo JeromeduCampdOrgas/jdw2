@@ -13,11 +13,11 @@
         <h2>Le commerce en ligne</h2>
         <p>
           Le commerce en ligne a connu ces dernières années une forte évolution.
-          Exposez ces produits, laissez le visiteur faire son choix.
+          Exposer ces produits, laisser le visiteur faire son choix.
         </p>
         <p>
           Une fois le produit choisi et customisé, le visiteur le dépose dans
-          son panier, et au travers d'un formulaire valide ses coordonnées et
+          son panier, et au travers d'un formulaire, valide ses coordonnées et
           son achat.
         </p>
         <p>

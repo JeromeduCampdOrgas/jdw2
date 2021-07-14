@@ -14,13 +14,13 @@
       <div id="accueilImg" class="accueilImg">
         <img
           id="accueil-image"
-          src="../assets/images/ordi-calepin_retouche2.jpg"
+          src="../assets/images/ordi-calepin-retouche-final.jpg"
           alt="développement web,Html5,CSS3,Vuejs,JavaScript"
         />
       </div>
     </div>
     <div id="about">
-      <p id="apropos" @click="affichePres()">Qui suis-je?</p>
+      <p id="apropos" @click="affichePres()"> <a href="#maPresentation"></a> Qui suis-je?</p>
     </div>
     <div class="" id="maPresentation" v-if="visible" @click="affichePres()">
       <p>
@@ -89,7 +89,7 @@ export default {
 }
 
 #about {
-  margin: 20px auto;
+  margin: 15px auto;
 }
 #apropos:hover {
   cursor: pointer;

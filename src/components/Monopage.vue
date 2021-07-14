@@ -40,7 +40,7 @@
       </div>
     </div>
     <div id="tarif">
-      <p>A partir de 600€</p>
+      <p>A partir de 900€ HT</p>
     </div>
   </div>
 </template>
