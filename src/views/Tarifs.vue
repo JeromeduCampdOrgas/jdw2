@@ -136,8 +136,9 @@ export default {};
 
 <style lang="scss" scoped>
 .table__spec {
-  width: 80%;
-  margin: 30px auto;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 0.9em;
 
   & thead {
     & #entete {
@@ -147,8 +148,7 @@ export default {};
     & td {
       min-width: 45px;
       max-width: 45px;
-      padding: 3px;
-
+      padding: 5px;
       border-bottom: 1px #4c74b4 solid;
     }
   }
@@ -162,5 +162,13 @@ export default {};
 }
 .fa-times {
   color: blue;
+}
+
+@media (min-width: 900px) {
+  .table__spec {
+    width: 70%;
+    margin: 30px auto;
+    font-size: 0.9em;
+  }
 }
 </style>
