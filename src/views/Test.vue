@@ -1,35 +1,7 @@
 <template>
-  <h1>Propositions de services</h1>
-  <transition name="slide-fade">
-    <div class="contenu d-flex" id="contenu">
-      <div class="card" v-for="service in services" v-bind:key="service.index">
-        <div
-          class="bg-image hover-overlay ripple"
-          data-mdb-ripple-color="light"
-        >
-          <img v-bind:src="service.icone" class="img-fluid" />
-          <a href="#!">
-            <div
-              class="mask"
-              style="background-color: rgba(251, 251, 251, 0.15)"
-            ></div>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">{{ service.prestation }}</h5>
-          <p class="card-text">
-            {{ service.techno }}
-          </p>
-          <p class="card-text">
-            {{ service.complementText }}
-          </p>
-          <a href="#!" class="btn btn-primary" @click="detailService"
-            >En savoir plus</a
-          >
-        </div>
-      </div>
-    </div>
-  </transition>
+  <h1>test</h1>
+  <button @click="createTest">Click</button>
+  <div class="contenu d-flex" id="contenu"></div>
 </template>
 
 <script>
@@ -81,15 +53,57 @@ export default {
     };
   },
   methods: {
-    detailService: function () {
-      var parent = document.getElementById("contenu");
-      let serviceArray = this.services;
-      for (var i = 0, len = parent.children.length; i < len; i++) {
-        (function (index) {
-          parent.children[i].onclick = function () {
-            location.replace(serviceArray[index].page);
-          };
-        })(i);
+    createTest: function () {
+      for (let i = 0; i < this.services.length; i++) {
+        let contenu = document.getElementById("contenu");
+        let card = document.createElement("div");
+        let cardImg = document.createElement("div");
+        let imgSrc = document.createElement("img");
+        let imgLien = document.createElement("a");
+        let mask = document.createElement("div");
+        let cardBody = document.createElement("div");
+        let cardTitle = document.createElement("h5");
+        let cardText = document.createElement("p");
+        let cardText2 = document.createElement("p");
+        let plus = document.createElement("a");
+
+        //Création de la card
+        contenu.appendChild(card);
+        card.className = "card";
+        //Animation
+        card.animate(
+          [{ transform: "rotateY(-90deg)" }, { transform: "rotateY(0deg" }],
+          {
+            duration: 1000,
+            delay: i * 250,
+          }
+        );
+        //création de l'image
+        card.appendChild(cardImg);
+        cardImg.className = "bg-image hover-overlay ripple";
+        cardImg.appendChild(imgSrc);
+        cardImg.appendChild(imgLien);
+        imgSrc.setAttribute("src", "" + this.services[i].icone + "");
+        imgSrc.className = "img-fluid";
+        imgLien.setAttribute("href", "#");
+        //création du mask
+        imgLien.appendChild(mask);
+        mask.className = "mask";
+        //creation contenuCard
+        card.appendChild(cardBody);
+        cardBody.className = "card-body";
+        cardBody.appendChild(cardTitle);
+        cardTitle.className = "card-title";
+        cardTitle.innerHTML = "" + this.services[i].prestation + "";
+        cardBody.appendChild(cardText);
+        cardText.className = "card-text";
+        cardText.innerHTML = "" + this.services[i].techno + "";
+        cardBody.appendChild(cardText2);
+        cardText2.className = "card-text";
+        cardText2.innerHTML = "" + this.services[i].complementText + "";
+        cardBody.appendChild(plus);
+        plus.className = "btn btn-primary";
+        plus.innerHTML = "En savoir plus";
       }
     },
   },
@@ -107,7 +121,7 @@ export default {
     width: 100%;
     margin: 60px auto;
     border: none;
-    animation: animCard 2s 250ms;
+    animation: animCard 2s;
     & .bg-image {
       border-radius: 25px;
       border: none;

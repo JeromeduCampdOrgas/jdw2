@@ -128,6 +128,7 @@
       </tr>
     </thead>
   </table>
+  <p>Tarif Journalier Moyen: 300€ HT</p>
 </template>
 
 <script>

@@ -22,10 +22,10 @@
             ><i class="fas fa-tasks"></i>Services</router-link
           ><!---->
 
-          ><!--/realisations-->
+          <!--/realisations
           <router-link to=""
-            ><i class="fab fa-buffer"></i>Réalisations</router-link
-          ><!--/tarifs-->
+            ><i class="fab fa-buffer"></i>Réalisations</router-link-->
+          <!--/tarifs-->
           <router-link to="/tarifs"
             ><i class="fas fa-barcode"></i>Tarifs</router-link
           >

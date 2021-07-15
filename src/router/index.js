@@ -9,6 +9,9 @@ import Application from '@/views/Application.vue';
 import Mentions from '@/views/Mentions.vue';
 import Cgv from '@/views/Cgv.vue';
 import Contact from '@/views/Contact.vue';
+
+
+
 /*import Realisations from '@/views/Realisations.vue';
 import Tarifs from '@/views/Tarifs.vue';
 
@@ -21,6 +24,7 @@ import SiteSpecifique from '@/views/SiteSpecifique.vue';
 import NotFound from '@/views/NotFound.vue';*/
 
 const routes = [
+
     {
         name: 'Home',
         path: '/',
