@@ -15,12 +15,12 @@
         <img
           id="accueil-image"
           src="../assets/images/ordi-calepin-retouche-final.jpg"
-          alt="développement web,Html5,CSS3,Vuejs,JavaScript"
+          alt="développement web,Html5,CSS3,Vuejs,JavaScript,Nodejs, site personnalisé, application web"
         />
       </div>
     </div>
     <div id="about">
-      <p id="apropos" @click="affichePres()"> <a href="#maPresentation"></a> Qui suis-je?</p>
+      <p id="apropos" @click="affichePres()">  Qui suis-je?</p>
     </div>
     <div class="" id="maPresentation" v-if="visible" @click="affichePres()">
       <p>
@@ -44,7 +44,7 @@
           <ul>
             <li>Comprendre votre activité</li>
             <li>Analyser votre besoin</li>
-            <li>Adapter avec vous les solutions</li>
+            <li>Adapter avec vous les solutions et les mettre en oeuvre</li>
             <li>En partenaire, vous accompagner</li>
           </ul>
       </p>

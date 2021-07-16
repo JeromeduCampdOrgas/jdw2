@@ -7,6 +7,7 @@
           class="iframe"
           src="https://jeromeducampdorgas.github.io/ducampdorgas_3_12112020/"
           frameborder="0"
+          alt="réalisation projet3 openclassrooms"
         ></iframe>
       </div>
       <div class="detail">

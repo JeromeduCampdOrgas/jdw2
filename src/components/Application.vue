@@ -7,6 +7,7 @@
           class="iframe"
           src="../assets/realisations/groupomaniamobile.png"
           frameborder="0"
+          alt="réalisation projet7 openclassrooms"
         />
       </div>
       <div class="detail">

@@ -7,6 +7,7 @@
           class="iframe"
           src="https://jeromeducampdorgas.github.io/Reservia/"
           frameborder="0"
+          alt="réalisation projet2 openclassrooms"
         ></iframe>
       </div>
       <div class="detail">

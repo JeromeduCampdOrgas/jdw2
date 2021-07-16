@@ -7,6 +7,7 @@
           class="imgcommerce"
           src="../assets/realisations/capture_orinoco.png"
           frameborder="0"
+          alt="réalisation projet5 openclassrooms"
         />
       </div>
       <div class="detail">

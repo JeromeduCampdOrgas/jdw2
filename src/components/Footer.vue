@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <footer class="bg-dark text-center text-white">
+  <footer class="bg-dark text-center text-white" id="footer">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
@@ -16,7 +16,7 @@
         <!-- Github -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://github.com/JeromeduCampdOrgas"
           role="button"
           ><i class="fab fa-github"></i
         ></a>
