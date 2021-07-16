@@ -537,8 +537,8 @@
 export default {
   data() {
     return {
-      site: "https://jdw.fr",
-      entreprise: "JdW",
+      site: "https://jducampdorgas.fr",
+      entreprise: "Jérôme du Camp d'Orgas",
     };
   },
 };
