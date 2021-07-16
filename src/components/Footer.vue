@@ -25,13 +25,16 @@
     </div>
     <!-- Grid container -->
     <div class="footer" id="footerContact">
-      <input
+      <!--<input
         type="button"
         id="btn"
         class="btn"
         value="Contactez-moi"
-        @click="btnClick"
-      />
+
+      />-->
+      <router-link to="/contact" type="button" id="btn" class="btn"
+        >Contactez-moi</router-link
+      >
     </div>
     <div class="mentions">
       <ul>
@@ -81,6 +84,9 @@ export default {
       color: #fff;
     }
   }
+}
+#btn {
+  background: #fff;
 }
 #btn:hover {
   background: linear-gradient(to right, #bbb, rgb(124, 122, 122));
