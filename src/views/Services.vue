@@ -74,7 +74,7 @@ export default {
           icone: require("../assets/realisations/seo.png"),
           techno: "html5, css3, Sass, MySql",
           complementText:
-            "Un site à votre image vous permettant de gérer la mise en ligne de vos produits. Interface sécurisée de mise à jour, création d'une base de données",
+            "Après un audit des performances de votre site, j'apporte les corrections pour améliorer votre référencement naturel.",
           page: "/seo",
         },
       ],
