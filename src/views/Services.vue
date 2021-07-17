@@ -23,9 +23,9 @@
           <p class="card-text">
             {{ service.complementText }}
           </p>
-          <a href="#!" class="btn btn-primary" @click="detailService"
+          <a v-bind:href="service.page" class="btn btn-primary"
             >En savoir plus</a
-          >
+          ><!--@click="detailService"-->
         </div>
       </div>
     </div>
