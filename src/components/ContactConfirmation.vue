@@ -32,7 +32,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 50%;
+  min-width: 100%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -48,7 +48,14 @@ export default {
 }
 .card {
   margin: auto;
+  padding: 15px;
   font-weight: bold;
   background: #fff;
+}
+/********** */
+@media (min-width: 667px) {
+  .bloc-modale {
+    width: 200px;
+  }
 }
 </style>
