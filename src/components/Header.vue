@@ -16,7 +16,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mobile-menu navbar-collapse" id="navbarSupportedContent">
           <router-link to="/"><i class="fas fa-home"></i>Accueil</router-link>
           <router-link to="/services"
             ><i class="fas fa-tasks"></i>Services</router-link
@@ -55,10 +55,15 @@ export default {
   height: 30px;
   margin: auto;
 }
-.collapse {
+button {
+  margin: 26px;
+}
+.mobile-menu {
   & a {
     color: #4c74b4;
     margin: 10px;
+    display: block;
+    text-align: left;
     & i {
       margin: 5px;
     }
