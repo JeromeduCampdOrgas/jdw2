@@ -107,7 +107,7 @@ export default {
     width: 100%;
     margin: 60px auto;
     border: none;
-    animation: animCard 2s 250ms;
+    animation: animCard 2s 0ms;
     & .bg-image {
       border-radius: 25px;
       border: none;
@@ -123,9 +123,11 @@ export default {
 
 @keyframes animCard {
   0% {
+    opacity: 1;
     transform: rotateY(-90deg);
   }
   100% {
+    opacity: 1;
     transform: rotateY(0deg);
   }
 }
@@ -138,8 +140,8 @@ export default {
     justify-content: space-around;
     flex-wrap: wrap;
     & .card {
-      margin: 145px 30px;
-      width: 26%;
+      margin: 100px auto;
+      width: 35%;
     }
   }
 }
