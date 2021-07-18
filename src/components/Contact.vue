@@ -291,7 +291,7 @@ input::placeholder {
   input,
   textarea,
   select {
-    width: calc(100% - 30px);
+    width: calc(100% - 10px);
     padding: 8px;
     margin-bottom: 20px;
     border: 1px solid #1c87c9;

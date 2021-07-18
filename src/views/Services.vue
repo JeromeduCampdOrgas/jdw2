@@ -138,7 +138,7 @@ export default {
     justify-content: space-around;
     flex-wrap: wrap;
     & .card {
-      margin: 60px 30px;
+      margin: 145px 30px;
       width: 26%;
     }
   }
