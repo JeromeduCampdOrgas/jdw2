@@ -8,6 +8,7 @@ import Tarifs from '@/views/Tarifs.vue';
 import Application from '@/views/Application.vue';
 import Mentions from '@/views/Mentions.vue';
 import Cgv from '@/views/Cgv.vue';
+import Confidentialite from '@/views/Confidentialite.vue';
 import Contact from '@/views/Contact.vue';
 
 
@@ -95,6 +96,14 @@ const routes = [
         component: Cgv,
         meta: {
             title: 'cgv'
+        }
+    },
+    {
+        name: 'Confidentialite',
+        path: '/confidentialite',
+        component: Confidentialite,
+        meta: {
+            title: 'confidentialite'
         }
     },
     {

@@ -43,7 +43,9 @@
           <router-link to="/cgv">CGV / CGU</router-link>
         </li>
         <li>
-          <a href="">Politique de confidentialité</a>
+          <router-link to="/confidentialite"
+            >Politique de confidentialité</router-link
+          >
         </li>
       </ul>
     </div>
