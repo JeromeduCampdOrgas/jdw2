@@ -253,7 +253,6 @@ input::placeholder {
 /*Gestion erreur formulaire*/
 
 .erreur {
-  height: 90px;
   margin: 5px;
   padding: 15px 5px;
   color: red;
