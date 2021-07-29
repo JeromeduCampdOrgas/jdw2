@@ -72,7 +72,6 @@ export default {
         {
           prestation: "Optimisation / Référencement",
           icone: require("../assets/realisations/seo.png"),
-          techno: "html5, css3, Sass, MySql",
           complementText:
             "Après un audit des performances de votre site, j'apporte les corrections pour améliorer votre référencement naturel.",
           page: "/seo",
