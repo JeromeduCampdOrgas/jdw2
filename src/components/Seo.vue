@@ -37,14 +37,14 @@
       </div>
     </div>
     <div id="tarif">
-      <p>A partir de 1 500€ HT</p>
+      <p>Tarif journalier moyen: 300 €</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Multipage",
+  name: "Seo",
 };
 </script>
 

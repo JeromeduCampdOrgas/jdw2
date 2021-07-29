@@ -6,6 +6,7 @@ import Multipage from '@/views/Multipage.vue';
 import Ecommerce from '@/views/Ecommerce.vue';
 import Tarifs from '@/views/Tarifs.vue';
 import Application from '@/views/Application.vue';
+import Seo from '@/views/Seo.vue';
 import Mentions from '@/views/Mentions.vue';
 import Cgv from '@/views/Cgv.vue';
 import Confidentialite from '@/views/Confidentialite.vue';
@@ -72,6 +73,14 @@ const routes = [
         component: Application,
         meta: {
             title: 'Application'
+        }
+    },
+    {
+        name: 'Seo',
+        path: '/seo',
+        component: Seo,
+        meta: {
+            title: 'Seo'
         }
     },
     {
