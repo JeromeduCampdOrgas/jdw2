@@ -36,7 +36,7 @@
       </p>
 
       <h2>HEBERGEMENT</h2>
-      <p>Le site est hébergé par ""</p>
+      <p>Le site est hébergé par o2switch</p>
     </div>
   </div>
 </template>

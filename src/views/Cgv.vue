@@ -40,7 +40,7 @@
                     <div id = "adresse">
                         Jérôme du Camp d'Orgas, AE
                         Capital social de 0 euros
-                        Immatriculé au RCS de Tours, sous le numéro - en cours d'immactriculation -
+                        Immatriculé au RCS de Tours, sous le numéro: 900 339 607 00013
                         5 rue des près Michau
                         37240 LIGUEIL
                         mail : ducampdorgasjerome@gmail.com
@@ -442,7 +442,7 @@
             <p>
                 Sauf mention contraire explicite du Client, le Prestataire se réserve la possibilité 
                 d’inclure dans la réalisation une mention commerciale indiquant clairement sa contribution, 
-                sous la forme d’un lien du type : Site créé par <a href="{{site}}"> {{entreprise}}</a>
+                sous la forme d’un lien du type : Site créé par <a v-bind:href="site"> {{entreprise}}</a>
             </p>
         </article>
         <article>
@@ -493,7 +493,7 @@
             <em>Contrat en cours de signature</em>
             </p>
             <p>
-                Le Client est également informé qu’il peut, également recourir à <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage">la plateforme de Règlement 
+                Le Client est également informé qu’il peut, également recourir à <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=FR">la plateforme de Règlement 
                 en Ligne des Litige (RLL)</a> 
             </p>
             Tous les litiges auxquels les opérations d'achat et de vente conclues en application des présentes CGV et qui n’auraient pas fait l’objet d’un règlement amiable entre le vendeur ou par médiation, seront soumis aux tribunaux compétents dans les conditions de droit commun.
@@ -537,7 +537,7 @@
 export default {
   data() {
     return {
-      site: "https://jducampdorgas.fr",
+      site: "https://www.jducampdorgas.com",
       entreprise: "Jérôme du Camp d'Orgas",
     };
   },
