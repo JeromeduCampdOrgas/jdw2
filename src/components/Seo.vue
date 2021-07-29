@@ -1,6 +1,6 @@
 <template>
   <div class="service">
-    <div class="col-12"><h1>Le référencement nturel ou SEO</h1></div>
+    <div class="col-12"><h1>Le référencement naturel ou SEO</h1></div>
     <div class="d-flex">
       <div class="iframe-container d-flex">
         <img
@@ -17,23 +17,23 @@
           positionner au mieux dans les résultats de recherches.
         </p>
         <p>
-          Plusieurs posiibilités de menu de navigation: en tête de page ou au
-          travers d'éléments créant un lien vers vos différentes pages.
+          Les termes qui définissent votre activité dans les contenus de votre
+          site, le respect des critères d'accessibilité (taille de polices,
+          contrastes de couleur...).
         </p>
         <p>
-          Dans l'exemple ci-contre, la navigation se fait par le biais des
-          photos des restaurants partenaires vers la page correspondante. Vous
-          pouvez ainsi consulter leurs différentes proposition.
+          Ce que je vous propose, c'est de passer à la loupe l'ensemble de vos
+          pages, pour détecter tout ce que les robots de Google n'aiment pas, et
+          en même temps j'analyse les termes utilisés dans le descriptif de
+          votre activité pour aller vers les plus pertinents et percutants.
         </p>
         <p>
-          Tout en bas de votre page, vous pouvez y positionner votre adresse,
-          les moyens de contact, les conditions de prestations, des liens ves
-          vos partenaires.
+          Une fois cet audit fait, je dresse la liste des corrections et/ou
+          améliorations à apporter à votre site afin de gagner en visibilité
+          mais également en vitesse de chargement de vos pages et ainsi
+          améliorer l'expérience de vos visiteurs.
         </p>
-        <p>
-          Avant de vous lancer, nous échangeons sur vos besoins, vos idées et
-          une fois le cahier des charges établis...c'est à moi de "jouer".
-        </p>
+        <p>Ce service est proposé sur devis.</p>
       </div>
     </div>
     <div id="tarif">
