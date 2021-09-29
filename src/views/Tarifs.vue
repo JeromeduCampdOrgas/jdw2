@@ -1,4 +1,5 @@
-🧠 <template>
+🧠
+<template>
   <h1>Tarifs</h1>
   <table class="table__spec">
     <thead>
@@ -128,7 +129,7 @@
       </tr>
     </thead>
   </table>
-  <p>Tarif Journalier Moyen: 300€ HT</p>
+  <p>Tarif Journalier Moyen: 250€ HT</p>
 </template>
 
 <script>
