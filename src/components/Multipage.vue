@@ -18,13 +18,13 @@
           descriptif.
         </p>
         <p>
-          Plusieurs posiibilités de menu de navigation: en tête de page ou au
+          Plusieurs possibilités de menu de navigation: en tête de page ou au
           travers d'éléments créant un lien vers vos différentes pages.
         </p>
         <p>
           Dans l'exemple ci-contre, la navigation se fait par le biais des
           photos des restaurants partenaires vers la page correspondante. Vous
-          pouvez ainsi consulter leurs différentes proposition.
+          pouvez ainsi consulter leurs différentes propositions.
         </p>
         <p>
           Tout en bas de votre page, vous pouvez y positionner votre adresse,
@@ -33,7 +33,7 @@
         </p>
         <p>
           Avant de vous lancer, nous échangeons sur vos besoins, vos idées et
-          une fois le cahier des charges établis...c'est à moi de "jouer".
+          une fois le cahier des charges établi...c'est à moi de "jouer".
         </p>
       </div>
     </div>
@@ -49,5 +49,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
