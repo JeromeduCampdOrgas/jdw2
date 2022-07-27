@@ -20,7 +20,15 @@
           role="button"
           ><i class="fab fa-github"></i
         ></a>
+        <!-- Facebook -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://www.facebook.com/jdw37"
+          role="button"
+          ><i class="fab fa-facebook"></i
+        ></a>
       </section>
+
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
@@ -62,7 +70,7 @@
 <script>
 export default {
   methods: {
-    btnClick: function () {
+    btnClick: function() {
       location.replace("/contact");
     },
     /*buttonHover: function () {

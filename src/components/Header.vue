@@ -20,7 +20,7 @@
           <router-link to="/"><i class="fas fa-home"></i>Accueil</router-link>
           <router-link to="/services"
             ><i class="fas fa-tasks"></i>Services</router-link
-          ><!---->
+          >
 
           <!--/realisations
           <router-link to=""
