@@ -21,7 +21,6 @@
           <router-link to="/services"
             ><i class="fas fa-tasks"></i>Services</router-link
           >
-
           <!--/realisations
           <router-link to=""
             ><i class="fab fa-buffer"></i>Réalisations</router-link-->
