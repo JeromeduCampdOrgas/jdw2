@@ -10,23 +10,29 @@
           class="btn btn-outline-light btn-floating m-1"
           href="https://www.linkedin.com/in/jerome-du-camp-d-orgas-63830689"
           role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+          alt="linkedin"
+          ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+          ><span class="sr-only">Linkedin</span></a
+        >
 
         <!-- Github -->
         <a
           class="btn btn-outline-light btn-floating m-1"
           href="https://github.com/JeromeduCampdOrgas"
           role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+          alt="github"
+          ><i class="fab fa-github" aria-hidden="true"></i
+          ><span class="sr-only">Github</span></a
+        >
         <!-- Facebook -->
         <a
           class="btn btn-outline-light btn-floating m-1"
           href="https://www.facebook.com/jdw37"
           role="button"
-          ><i class="fab fa-facebook"></i
-        ></a>
+          alt="facebook"
+          ><i class="fab fa-facebook" aria-hidden="true"></i
+          ><span class="sr-only">Facebook</span></a
+        >
       </section>
 
       <!-- Section: Social media -->
@@ -96,6 +102,7 @@ export default {
   }
 }
 #btn {
+  color: #334c7a;
   background: #fff;
 }
 #btn:hover {

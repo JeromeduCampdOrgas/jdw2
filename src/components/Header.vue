@@ -59,8 +59,9 @@ button {
 }
 .mobile-menu {
   & a {
-    color: #4c74b4;
+    color: #334c7a;
     margin: 10px;
+    font-weight: bold;
     display: block;
     text-align: left;
     & i {

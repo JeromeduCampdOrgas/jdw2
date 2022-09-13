@@ -7,12 +7,17 @@
           class="bg-image hover-overlay ripple"
           data-mdb-ripple-color="light"
         >
-          <img v-bind:src="service.icone" class="img-fluid" />
-          <a href="#!">
+          <img
+            v-bind:src="service.icone"
+            class="img-fluid"
+            alt="service.prestation"
+          />
+          <a v-bind:href="service.page" aria-hidden="true">
             <div
               class="mask"
               style="background-color: rgba(251, 251, 251, 0.15)"
             ></div>
+            <span class="sr-only">Search</span>
           </a>
         </div>
         <div class="card-body">
@@ -80,12 +85,12 @@ export default {
     };
   },
   methods: {
-    detailService: function () {
+    detailService: function() {
       var parent = document.getElementById("contenu");
       let serviceArray = this.services;
       for (var i = 0, len = parent.children.length; i < len; i++) {
-        (function (index) {
-          parent.children[i].onclick = function () {
+        (function(index) {
+          parent.children[i].onclick = function() {
             location.replace(serviceArray[index].page);
           };
         })(i);
@@ -116,6 +121,9 @@ export default {
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: 25px;
       }
+    }
+    & .btn-primary {
+      background-color: #0057a3;
     }
   }
 }
