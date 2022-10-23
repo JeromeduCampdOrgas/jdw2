@@ -2,7 +2,9 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <div class="logo">
-        <img id="logo" src="../assets/logo/Logo1_retouche.png" alt="" />
+        <router-link to="/">
+          <img id="logo" src="../assets/logo/Logo1_retouche.png" alt=""
+        /></router-link>
       </div>
       <div id="menu">
         <button
@@ -21,9 +23,10 @@
           <router-link to="/services"
             ><i class="fas fa-tasks"></i>Services</router-link
           >
-          <!--/realisations
-          <router-link to=""
-            ><i class="fab fa-buffer"></i>Réalisations</router-link-->
+          <!--/realisations-->
+          <router-link to="/realisations"
+            ><i class="fab fa-buffer"></i>Réalisations</router-link
+          >
           <!--/tarifs-->
           <router-link to="/tarifs"
             ><i class="fas fa-barcode"></i>Tarifs</router-link
